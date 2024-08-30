@@ -19,7 +19,7 @@ public class UserController {
 	@RequestMapping("getUsers")
 	@ResponseBody
 	public List<User> getAllUsers() {
-		System.out.println("inside getAllUsers method");
+		System.out.println("inside getAllUsers method test");
 		List<User> results = userServiceObj.getUsers();
 		return results;
 	}
