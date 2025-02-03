@@ -64,7 +64,7 @@ public class UserService {
 
 	public String deleteUser(int id)
 	{
-		System.out.println("inside deleteUser method");
+		System.out.println("inside deleteUser method test");
 		boolean isUserExist = UserRepository.existsById(Integer.toString(id));
 		if(isUserExist)
 		{	
