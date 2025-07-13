@@ -16,7 +16,7 @@ public class UserService {
 	UserRepository UserRepository;
 
 	public List<User> getUsers() {
-		System.out.println("inside getUsers service method");
+		System.out.println("inside getUsers method");
 		List<User> results = UserRepository.findAll();
 		System.out.println(results);
 		return results;
@@ -44,7 +44,7 @@ public class UserService {
 	
 	public String updateUser(int id,String name)
 	{
-		System.out.println("inside updateUser service method");
+		System.out.println("inside updateUser in service method");
 		boolean isUserExist = UserRepository.existsById(Integer.toString(id));
 		if(isUserExist)
 		{	
