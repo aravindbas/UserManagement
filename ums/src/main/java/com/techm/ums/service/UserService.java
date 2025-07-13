@@ -24,7 +24,7 @@ public class UserService {
 	
 	public String createUser(int id,String name)
 	{
-		System.out.println("inside createUser service method");
+		System.out.println("inside createUser in service method");
 		User user= new User();
 		user.setId(id);
 		user.setName(name);
