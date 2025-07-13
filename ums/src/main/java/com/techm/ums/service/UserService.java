@@ -24,7 +24,7 @@ public class UserService {
 	
 	public String createUser(int id,String name)
 	{
-		System.out.println("inside createUser method");
+		System.out.println("inside createUser in service method");
 		User user= new User();
 		user.setId(id);
 		user.setName(name);
@@ -44,7 +44,7 @@ public class UserService {
 	
 	public String updateUser(int id,String name)
 	{
-		System.out.println("inside updateUser method");
+		System.out.println("inside updateUser in service method");
 		boolean isUserExist = UserRepository.existsById(Integer.toString(id));
 		if(isUserExist)
 		{	
