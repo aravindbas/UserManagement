@@ -44,7 +44,6 @@ public class UserService {
 	
 	public String updateUser(int id,String name)
 	{
-		System.out.println("inside updateUser service method");
 		boolean isUserExist = UserRepository.existsById(Integer.toString(id));
 		if(isUserExist)
 		{	
