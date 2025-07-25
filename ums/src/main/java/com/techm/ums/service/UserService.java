@@ -35,7 +35,7 @@ public class UserService {
 		else
 		{
 			UserRepository.save(user);
-		  return "user created sucesfully";
+		  return "user created Sucesfully";
 		}
 		
 	}
