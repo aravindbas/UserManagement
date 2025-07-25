@@ -16,7 +16,6 @@ public class UserService {
 	UserRepository UserRepository;
 
 	public List<User> getUsers() {
-		System.out.println("inside getUsers service method");
 		List<User> results = UserRepository.findAll();
 		System.out.println(results);
 		return results;
