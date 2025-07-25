@@ -16,7 +16,6 @@ public class UserService {
 	UserRepository UserRepository;
 
 	public List<User> getUsers() {
-		System.out.println("inside getUsers service method");
 		List<User> results = UserRepository.findAll();
 		System.out.println(results);
 		return results;
@@ -24,7 +23,6 @@ public class UserService {
 	
 	public String createUser(int id,String name)
 	{
-		System.out.println("inside createUser in service method");
 		User user= new User();
 		user.setId(id);
 		user.setName(name);
@@ -37,14 +35,13 @@ public class UserService {
 		else
 		{
 			UserRepository.save(user);
-		  return "user created sucesfully";
+		  return "user created Sucesfully";
 		}
 		
 	}
 	
 	public String updateUser(int id,String name)
 	{
-		System.out.println("inside updateUser service method");
 		boolean isUserExist = UserRepository.existsById(Integer.toString(id));
 		if(isUserExist)
 		{	
@@ -64,7 +61,6 @@ public class UserService {
 
 	public String deleteUser(int id)
 	{
-		System.out.println("inside deleteUser method");
 		boolean isUserExist = UserRepository.existsById(Integer.toString(id));
 		if(isUserExist)
 		{	
