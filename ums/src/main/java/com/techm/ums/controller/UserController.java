@@ -51,6 +51,8 @@ public class UserController {
 	@ResponseBody
 	public String submitUser(int id, String name)
 	{
+		System.out.println("id"+id);
+		System.out.println("name"+name);
 		String result =userServiceObj.createUser(id, name);
 		return result;
 	}
